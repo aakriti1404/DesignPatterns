@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProxyPattern
 {
-    public class Folder : IFolder
+    public class GeneralFolder : IFolder
     {
         public void PerformOperation()
         {
-            Console.WriteLine("Performing read-write operation on the confidential folder.");
+            Console.WriteLine("Performing read-write operation on the general folder.");
+            Console.WriteLine("It can be accessed by any employee.");
         }
     }
 }
